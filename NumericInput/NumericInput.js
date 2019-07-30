@@ -158,7 +158,8 @@ export default class NumericInput extends Component {
         const iconStyle = [style.icon, this.props.iconStyle]
         const totalWidth = this.props.totalWidth
         const totalHeight = this.props.totalHeight ? this.props.totalHeight : (totalWidth * 0.4)
-        const inputWidth = this.props.type === 'up-down' ? (totalWidth * 0.6) : (totalWidth * 0.4)
+        // const inputWidth = this.props.type === 'up-down' ? (totalWidth * 0.6) : (totalWidth * 0.4)
+        const inputWidth = this.props.inputWidth || this.props.type === 'up-down' ? (totalWidth * 0.6) : (totalWidth * 0.4)
         const borderRadiusTotal = totalHeight * 0.18
         const fontSize = totalHeight * 0.38
         const textColor = this.props.textColor
